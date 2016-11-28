@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-namespace Demo03.Part03
+namespace Udp03.Part02
 {
     public class GamepadControllerV1 : MonoBehaviour 
     {

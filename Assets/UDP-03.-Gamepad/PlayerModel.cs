@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Demo03
+namespace Udp03
 {
     [System.Serializable]
     public class PlayerModel 

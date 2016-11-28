@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-namespace Demo01
+namespace Udp01
 {
     public class UdpReceiver : MonoBehaviour 
     {

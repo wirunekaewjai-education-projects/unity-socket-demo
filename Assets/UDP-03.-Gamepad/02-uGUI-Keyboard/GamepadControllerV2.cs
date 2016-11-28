@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Demo03.Part04
+namespace Udp03.Part02
 {
     public class GamepadControllerV2 : MonoBehaviour 
     {

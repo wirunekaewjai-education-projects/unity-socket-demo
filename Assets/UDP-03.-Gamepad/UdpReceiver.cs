@@ -9,7 +9,7 @@ using System.Threading;
 using System;
 using System.Collections.Generic;
 
-namespace Demo03
+namespace Udp03
 {
     public class UdpReceiver : MonoBehaviour 
     {

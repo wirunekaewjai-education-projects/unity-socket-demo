@@ -6,7 +6,7 @@ using System.Text;
 
 using System.Threading;
 
-namespace Demo02
+namespace Udp02
 {
     public class UdpReceiver : MonoBehaviour 
     {
