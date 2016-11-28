@@ -20,7 +20,7 @@ namespace Tcp02
         {
             if (null != m_Socket)
             {
-                m_Socket.Disconnect(false);
+                m_Socket.Shutdown(SocketShutdown.Both);
                 m_Socket.Close();
             }
         }
@@ -35,7 +35,7 @@ namespace Tcp02
 
             if(null != m_Socket && Input.GetKeyDown(KeyCode.Space))
             {
-                byte[] buffer = Encoding.UTF8.GetBytes("Hello, World");
+                byte[] buffer = Encoding.ASCII.GetBytes("Hello, World");
                 m_Socket.Send(buffer);
             }
         }

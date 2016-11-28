@@ -16,10 +16,10 @@ namespace Tcp01
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Connect(destinationIP, destinationPort);
 
-            byte[] buffer = Encoding.UTF8.GetBytes("Hello, World");
+            byte[] buffer = Encoding.ASCII.GetBytes("Hello, World");
             socket.Send(buffer);
 
-            socket.Disconnect(false);
+            socket.Shutdown(SocketShutdown.Both);
             socket.Close();
         }
     }

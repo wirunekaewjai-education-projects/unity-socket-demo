@@ -41,7 +41,7 @@ namespace Tcp02
             while (m_Running)
             {
                 int length = m_Socket.Receive(buffer);
-                string msg = Encoding.UTF8.GetString(buffer, 0, length);
+                string msg = Encoding.ASCII.GetString(buffer, 0, length);
 
                 Debug.Log(msg);
             }

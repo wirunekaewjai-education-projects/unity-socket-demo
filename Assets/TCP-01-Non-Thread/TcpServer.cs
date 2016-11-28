@@ -24,7 +24,7 @@ namespace Tcp01
             byte[] buffer = new byte[1024];
             int length = client.Receive(buffer);
 
-            string msg = Encoding.UTF8.GetString(buffer, 0, length);
+            string msg = Encoding.ASCII.GetString(buffer, 0, length);
 
             Debug.Log(msg);
 
