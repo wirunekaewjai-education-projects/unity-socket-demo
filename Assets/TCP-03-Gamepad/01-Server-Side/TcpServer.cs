@@ -23,7 +23,6 @@ namespace Tcp03.Server
         private bool m_AcceptRunning;
 
         private List<TcpChannel> m_Channels = new List<TcpChannel>();
-        private Queue<int> m_Connections = new Queue<int>();
 
         void OnEnable () 
         {
